@@ -1,0 +1,169 @@
+.taskModule {
+    width: 80rem;
+
+    .formContainer {
+        overflow-y: auto;
+        position: absolute;
+        top: 0rem;
+        bottom: 8.4rem;
+        width: 54rem;
+        margin: 3rem 3rem 0rem 3rem;
+
+        .carousel {
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            .carouselImage {
+                img {
+                    height: 28.6rem;
+                }
+            }
+
+            .carousel-slider {
+                .control-arrow {
+                    background: rgba(0, 0, 0, .3) !important;
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    top: 14rem;
+
+                    &:focus {
+                        outline: 0.2rem solid rgb(98, 100, 167);
+                    }
+                }
+            }
+        }
+
+        .carousel .control-arrow,
+        .carousel.carousel-slider .control-arrow {
+            opacity: 1 !important;
+        }
+
+        button.control-arrow.control-prev:focus {
+            outline: 0.2rem solid rgb(98, 100, 167);
+        }
+
+        button.control-arrow.control-next:focus {
+            outline: 0.2rem solid rgb(98, 100, 167);
+        }
+
+        .ms-DatePicker:focus {
+            outline: 0.1rem solid #000;
+        }
+
+        .carousel.carousel-slider .control-arrow {
+            background: rgba(0, 0, 0, .3) !important;
+        }
+
+        .textArea {
+            textarea {
+                height: 7.8rem;
+            }
+        }
+
+        .eventDetail {
+            display: block;
+            margin-bottom: 0.8rem;
+            width: 52rem;
+            margin-top: 1.2rem;
+
+            .eventType {
+                width: 25rem;
+                display: inline;
+                float: left;
+                margin-left: 0.1rem;
+
+                .eventTypeDropdown {
+                    width: 25rem;
+                }
+            }
+
+            .eventDate {
+                width: 25rem;
+                float: right;
+
+                .ms-TextField-fieldGroup {
+                    background-color: #F3F2F1;
+                    border: none;
+                }
+            }
+        }
+
+        .eventShare {
+            display: block;
+            margin-top: 7.8rem;
+            width: 52rem;
+        }
+
+        .postTime {
+            display: block;
+            margin-top: 0.8rem;
+            width: 52rem;
+
+            .timeZoneDropdown {
+                margin-left: 1rem;
+                display: inline-block;
+                width: 45.3rem;
+            }
+        }
+
+        .textLabel {
+            font-size: 1.2rem;
+            color: #4E586A;
+            margin: 0 0 0.8rem 0;
+            font-weight: 400;
+        }
+
+        .ms-TextField-field {
+            font-weight: 600;
+        }
+    }
+
+    .footerContainer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 2rem 0rem 3.2rem 0rem;
+        width: 100%;
+
+        .hiddenLoader {
+            display: none;
+        }
+
+        .savingLoader {
+            float: left;
+            width: 15rem;
+            height: 3rem;
+        }
+
+        .errorMessage {
+            float: left;
+            width: 28rem;
+            height: 3rem;
+        }
+
+        .errorHidden {
+            display: none;
+        }
+
+        .buttonContainer {
+            display: inline;
+            float: right;
+            margin-right: 3.2rem;
+
+            #saveBtn {
+                margin-left: 0.8rem;
+            }
+        }
+    }
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 14rem !important;
+    color: #fff;
+    background: rgba(0, 0, 0, .3) !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    padding: 0rem !important;
+}

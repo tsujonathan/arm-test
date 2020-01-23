@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "cccafd23-2280-46a2-aa7e-3c4a49504ccc",
+  "packageName": "com.Template.microsoftteams",
+  "developer": {
+    "name": "Celebrations App",
+    "websiteUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://privacy.microsoft.com/en-us/privacystatement"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Celebrations App",
+    "full": "Celebrations App"
+  },
+  "description": {
+    "short": "Celebrations App",
+    "full": "Celebrations App"
+  },
+  "accentColor": "#FFFFFF",
+
+  "staticTabs": [
+    {
+      "contentUrl": "https://[Your domain]/Home/Events?userObjectId={userObjectId}&theme={theme}&locale={locale}",
+      "entityId": "EventsTab",
+      "name": "Events",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://[Your domain]/configtab",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+
+  "bots": [
+    {
+      "botId": "[Your bot id]",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+	   "commandLists": [
+        {
+          "scopes": [
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "ChangeMessageTarget",
+              "description": "Change message target"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "[Your domain]"
+  ],
+  "webApplicationInfo": {
+    "id": "[Your Azure app registration id for authentication]",
+    "resource": "api://[Your domain]"
+  }
+}

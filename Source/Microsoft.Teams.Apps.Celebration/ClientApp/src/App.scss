@@ -1,0 +1,211 @@
+.defaultContainer {
+  .appContainer {
+    background-color: #f3f2f1;
+
+    .configContainer {
+      background-color: #fff;
+    }
+  }
+
+  .empty-event-header {
+    color: #252424;
+  }
+
+  .empty-event-regular-text {
+    color: #252424;
+  }
+
+  .taskmoduleLoader {
+    background-color: #fff;
+    margin-top: 20rem;
+  }
+}
+
+.darkContainer {
+  background-color: rgb(32, 31, 31);
+
+  .event-card {
+    background-color: #000 !important;
+    color: #FFFFFF !important;
+  }
+
+  .ghost-tile-text {
+    color: #FFFFFF !important;
+  }
+
+  .textLabel {
+    color: #FFFFFF !important;
+  }
+
+  .ui-dropdown__container {
+    background-color: #201f1f !important;
+  }
+
+  .ms-TextField-fieldGroup {
+    color: #FFFFFF !important;
+    background-color: #201f1f !important;
+
+    #DatePicker0-label {
+      color: #FFFFFF !important;
+    }
+
+    ::placeholder {
+      color: #FFFFFF;
+    }
+  }
+
+  .taskmoduleLoader {
+    background-color: #2d2c2c;
+    margin-top: 20rem;
+  }
+}
+
+.highContrastContainer {
+  .event-card {
+    background-color: #000 !important;
+    border: 0.1rem solid #FFFFFF;
+  }
+
+  .ghost-tile-text {
+    color: #FFFFFF !important;
+  }
+
+  .textLabel {
+    color: #FFFFFF !important;
+  }
+
+  .ms-TextField-fieldGroup {
+    border: 0.1rem solid #FFFFFF !important;
+    color: #FFFFFF !important;
+    background-color: #000 !important;
+
+    #DatePicker0-label {
+      color: #FFFFFF !important;
+    }
+
+    ::placeholder {
+      color: #FFFFFF;
+    }
+  }
+
+  .taskmoduleLoader {
+    background-color: #000;
+    margin-top: 20rem;
+  }
+}
+
+.callout-dark {
+  .ms-DatePicker {
+    background-color: #000 !important;
+  }
+
+  .ms-DatePicker-monthAndYear,
+  .ms-DatePicker-prevMonth,
+  .ms-DatePicker-nextMonth,
+  .ms-DatePicker-day-button,
+  .ms-DatePicker-weekday {
+    color: #FFFFFF !important;
+  }
+
+  .ms-DatePicker-prevMonth,
+  .ms-DatePicker-nextMonth {
+    background: transparent;
+  }
+
+  .dayIsFocused_fcec416d:hover {
+    background: #484644 !important;
+    color: #fff !important;
+  }
+
+  .dayIsHighlighted_fcec416d {
+    background: rgb(98, 100, 167);
+  }
+
+  .ms-DatePicker-day--outfocus {
+    color: #484644;
+
+    &:hover {
+      background: #252424;
+      color: #fff;
+    }
+  }
+
+  .ms-DatePicker-goToday {
+    color: #fff;
+
+    &:hover {
+      color: rgb(98, 100, 167);
+    }
+  }
+}
+
+.callout-contrast {
+  .ms-DatePicker {
+    background-color: #000 !important;
+  }
+
+  .ms-DatePicker-monthAndYear,
+  .ms-DatePicker-prevMonth,
+  .ms-DatePicker-nextMonth,
+  .ms-DatePicker-day-button,
+  .ms-DatePicker-weekday {
+    color: #FFFFFF !important;
+  }
+
+  .ms-DatePicker-prevMonth,
+  .ms-DatePicker-nextMonth {
+    background: transparent;
+  }
+
+  .dayIsFocused_fcec416d:hover {
+    background: #484644 !important;
+    color: #fff !important;
+  }
+
+  .dayIsHighlighted_fcec416d {
+    background: rgb(98, 100, 167);
+  }
+
+  .ms-DatePicker-day--outfocus {
+    color: #484644;
+
+    &:hover {
+      background: #252424;
+      color: #fff;
+    }
+  }
+
+  .ms-DatePicker-goToday {
+    color: #fff;
+
+    &:hover {
+      color: rgb(98, 100, 167);
+    }
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem #FFFFFF;
+  border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c8c6c4;
+  border-radius: 1rem;
+  width: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+}
